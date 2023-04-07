@@ -16,12 +16,10 @@ int ft_lcm(int a, int b)
 {
     int largest;
 
-    // si a y b son 0, no se puede hacer el ejercicio
     if (a == 0 || b == 0)
     {
         return (0);
     }
-    // comprobar cual es mayor, a ó b
     if (a > b)
     {
         largest = a;
@@ -30,8 +28,6 @@ int ft_lcm(int a, int b)
     {
         largest = b;
     }
-    // teniendo en cuenta el mayor, calcular a partir de ahi cual es el primer multiplo comun que encontramos
-    // bucle infinito while(1) para aumentar largest hasta encontrar el comun multiplo
     while(1)
     {
         if (largest % a == 0 && largest % b == 0)
